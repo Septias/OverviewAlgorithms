@@ -1,0 +1,20 @@
+### Definitions
+- **Concurrency**: Nondeterministic composition of independently executing units (logical parallelism)
+- **Parallelism**: Efficient execution of fractions of a complex task on multiple processing units (physical parallelism)
+- **Race condition**: A  situation where the correctness of a concurrent program depends on the specific execution
+- **Data Race**: Occurs when two concurrent threads
+	- Access a shared memory location
+	- At least one is a write
+	- no synchchronisation mechanism
+	- (any order of codelines which accesses a single var...)
+- **Mutual Exclusion** Property: No more than 1 thread is in its critical section at any given time
+- **Freedom from deadlock**: If one or more threads try to enter the critical section, some thread will eventually succeed
+- **Freedom from starvation**: Every thread that tries to enter the critical section will eventually succeed
+- **Deadlock**: The situation where a group of threads wait forever because each of them is waiting for resources that are held by another thread in the group (circular dependency)
+- **Starvation**: The situation where a thread is perpetually denied access to a resource it requests
+- **Weak fairness**: If a thread continuously requests (that is, without interruptions) access to a resource, then access is granted eventually (or infinitely often)
+	- Threads waiting to perform down are scheduled nondeterministically
+- **Strong fairness**: If a thread requests access to a resource infinitely often, then access is granted eventually (or infinitely often)
+	- Threads waiting to perform down are scheduled fairly in FIFO (First In First Out) order
+- **K-exclusion problem**: The problem to devise a protocol that allows up to k threads to be in their critical sections at the same time
+- **Tail Recursive function**: A function f is tail recursive if the evaluation of f’s body evaluates the recursive call last

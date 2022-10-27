@@ -1,0 +1,23 @@
+
+### Key Terms:
+- **Dining Philosophers**
+- **Producer-Consumer**
+	- Producers and consumers access the buffer in mutual exclusion
+	- Consumers block when the buffer is empty
+	- Producers block when the buffer is full (bounded buffer variant)
+	- Arbitrary number, deadlock free, starvation free
+- **Boards**
+- **Barriers**: A barrier is a form of synchronization where there is a point (the barrier) in a program’s execution that all threads in a group have to reach before any of them is allowed to continue
+- **Reusable barrier**: implement Barrier such that:
+	- a thread blocks on wait until all threads have reached the barrier
+	- after expected # of threads have executed wait, the barrier is closed again
+- **Reader-writer problem**: Implement Board data structure such that:
+	- multiple reader can operate concurrently
+	- each writer has exclusive access
+- **Monitor**: A monitor is an object instantiating a monitor class that encapsulates synchronization mechanisms:
+	- attributes are shared variables, which all threads running on the monitor can see and modify
+	- methods define critical sections, with the built-in guarantee that at most one thread is active on a monitor at any time
+- **Condition**
+  - c.wait() blocks the running thread, appends it to blocked, and releases the lock on the monitor
+  - c.signal() removes one thread from blocked (if it’s not empty) and unblocks it
+  - c.isEmpty() returns true iff blocked is empty
