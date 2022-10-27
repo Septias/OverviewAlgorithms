@@ -10,13 +10,9 @@ declare module '@vue/runtime-core' {
     CodeSnippets: typeof import('./components/ccp/code-snippets.md')['default']
     Definitions: typeof import('./components/ccp/definitions.md')['default']
     Erlang: typeof import('./components/ccp/erlang.md')['default']
-    Full: typeof import('./components/full.md')['default']
-    IntervalScheduling: typeof import('./components/algos/interval-scheduling.md')['default']
     KeyTerms: typeof import('./components/ccp/key-terms.md')['default']
     Misc: typeof import('./components/ccp/misc.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    Segmantition: typeof import('./components/algos/segmantition.md')['default']
-    WeightedIntervalScheduling: typeof import('./components/algos/weighted-interval-scheduling.md')['default']
   }
 }
